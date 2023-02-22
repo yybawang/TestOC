@@ -14,7 +14,32 @@
 		0744C33429A4A6E500315FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0744C33329A4A6E500315FE1 /* Assets.xcassets */; };
 		0744C33729A4A6E500315FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0744C33529A4A6E500315FE1 /* LaunchScreen.storyboard */; };
 		0744C33A29A4A6E500315FE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0744C33929A4A6E500315FE1 /* main.m */; };
+		0744C34B29A4A7A700315FE1 /* ImSDK_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C34329A4A77F00315FE1 /* ImSDK_Plus.framework */; };
+		0744C34C29A4A7A700315FE1 /* ImSDK_Plus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C34329A4A77F00315FE1 /* ImSDK_Plus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0744C34E29A4A7A900315FE1 /* TKRoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C34429A4A78000315FE1 /* TKRoomSDK.framework */; };
+		0744C34F29A4A7A900315FE1 /* TKRoomSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C34429A4A78000315FE1 /* TKRoomSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0744C35029A4A7AA00315FE1 /* TKUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C34229A4A77E00315FE1 /* TKUISDK.framework */; };
+		0744C35129A4A7AA00315FE1 /* TKUISDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C34229A4A77E00315FE1 /* TKUISDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0744C35229A4A7AB00315FE1 /* TKWhiteBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C34529A4A78000315FE1 /* TKWhiteBoard.framework */; };
+		0744C35329A4A7AB00315FE1 /* TKWhiteBoard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C34529A4A78000315FE1 /* TKWhiteBoard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0744C34D29A4A7A700315FE1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0744C34C29A4A7A700315FE1 /* ImSDK_Plus.framework in Embed Frameworks */,
+				0744C34F29A4A7A900315FE1 /* TKRoomSDK.framework in Embed Frameworks */,
+				0744C35329A4A7AB00315FE1 /* TKWhiteBoard.framework in Embed Frameworks */,
+				0744C35129A4A7AA00315FE1 /* TKUISDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0744C32429A4A6E400315FE1 /* TestOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +54,10 @@
 		0744C33629A4A6E500315FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0744C33829A4A6E500315FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0744C33929A4A6E500315FE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0744C34229A4A77E00315FE1 /* TKUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TKUISDK.framework; sourceTree = "<group>"; };
+		0744C34329A4A77F00315FE1 /* ImSDK_Plus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImSDK_Plus.framework; sourceTree = "<group>"; };
+		0744C34429A4A78000315FE1 /* TKRoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TKRoomSDK.framework; sourceTree = "<group>"; };
+		0744C34529A4A78000315FE1 /* TKWhiteBoard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TKWhiteBoard.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0744C35029A4A7AA00315FE1 /* TKUISDK.framework in Frameworks */,
+				0744C34E29A4A7A900315FE1 /* TKRoomSDK.framework in Frameworks */,
+				0744C35229A4A7AB00315FE1 /* TKWhiteBoard.framework in Frameworks */,
+				0744C34B29A4A7A700315FE1 /* ImSDK_Plus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +78,7 @@
 		0744C31B29A4A6E400315FE1 = {
 			isa = PBXGroup;
 			children = (
+				0744C34129A4A74F00315FE1 /* Frameworks */,
 				0744C32629A4A6E400315FE1 /* TestOC */,
 				0744C32529A4A6E400315FE1 /* Products */,
 			);
@@ -76,6 +110,17 @@
 			path = TestOC;
 			sourceTree = "<group>";
 		};
+		0744C34129A4A74F00315FE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0744C34329A4A77F00315FE1 /* ImSDK_Plus.framework */,
+				0744C34429A4A78000315FE1 /* TKRoomSDK.framework */,
+				0744C34229A4A77E00315FE1 /* TKUISDK.framework */,
+				0744C34529A4A78000315FE1 /* TKWhiteBoard.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +131,7 @@
 				0744C32029A4A6E400315FE1 /* Sources */,
 				0744C32129A4A6E400315FE1 /* Frameworks */,
 				0744C32229A4A6E400315FE1 /* Resources */,
+				0744C34D29A4A7A700315FE1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,11 +339,28 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SQ49UM4PBP;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					Any,
+					iOS,
+					"Simulator:",
+					ImSDK_Plus.framework,
+					TKUISDK.framework,
+					TKRoomSDK.framework,
+					TKWhiteBoard.framework,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = TestOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = test.app.TestOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,11 +374,27 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SQ49UM4PBP;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					Any,
+					iOS,
+					"Simulator:",
+					ImSDK_Plus.framework,
+					TKUISDK.framework,
+					TKRoomSDK.framework,
+					TKWhiteBoard.framework,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = TestOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = test.app.TestOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <TKUISDK/TKUISDK.h>
 
 @interface AppDelegate ()
 
