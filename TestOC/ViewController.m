@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = UIColor.whiteColor;
 }
 
 - (void)awakeFromNib {
@@ -29,7 +29,7 @@
     self.firstButton = [self buttonWithFrame:CGRectMake(75, 50, 300, 30)];
     [self.firstButton setTitle:@"通过参数进教室" forState:UIControlStateNormal];
     [self.firstButton addTarget:self action:@selector(firstBtnClick) forControlEvents:UIControlEventTouchUpInside];
-
+    [self.view addSubview:self.firstButton];
 }
 
 - (void) firstBtnClick {

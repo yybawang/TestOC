@@ -340,15 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SQ49UM4PBP;
 				ENABLE_BITCODE = NO;
-				EXCLUDED_SOURCE_FILE_NAMES = (
-					Any,
-					iOS,
-					"Simulator:",
-					ImSDK_Plus.framework,
-					TKUISDK.framework,
-					TKRoomSDK.framework,
-					TKWhiteBoard.framework,
-				);
+				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -375,15 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SQ49UM4PBP;
 				ENABLE_BITCODE = NO;
-				EXCLUDED_SOURCE_FILE_NAMES = (
-					Any,
-					iOS,
-					"Simulator:",
-					ImSDK_Plus.framework,
-					TKUISDK.framework,
-					TKRoomSDK.framework,
-					TKWhiteBoard.framework,
-				);
+				EXCLUDED_SOURCE_FILE_NAMES = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
