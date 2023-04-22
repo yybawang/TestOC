@@ -39,7 +39,7 @@
 
 | 参数名 | 参数类型 | 说明 |
 | -- | -- | -- |
-| card_id | int | 设备ID，出款设备 |
+| card_id | int | 设备ID，出款设备，0则不指定使用自动有余额的设备出款 |
 | order_no | string | 唯一订单号 |
 | bank_name | string | 固定传值：vodafone |
 | account_name | string | 付款给谁的账户名，有则传，否则固定传值：vodafone |
