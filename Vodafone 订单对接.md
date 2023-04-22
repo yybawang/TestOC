@@ -13,7 +13,7 @@
 | payTime | string | 支付时间，形如 "2022-10-09 08:22:03" |
 
 
-## 2.付单-获取所有可用设备
+## 2.付单-获取所有可用设备--弃用
 
 
 **返回参数列表**
@@ -45,9 +45,10 @@
 | account_name | string | 付款给谁的账户名，有则传，否则固定传值：vodafone |
 | account_no | string | 付款给谁的手机号 |
 | amount | string | 付款金额，金额单位元，精确到两位小数 |
+| notify_url | string | 成功/失败通知地址 |
 
 
-## 4. 付单-设备处理状态-成功
+## 4. 付单-设备处理状态
 
 **状态参数列表**
 
@@ -55,20 +56,10 @@
 | 参数名 | 参数类型 | 说明 |
 | -- | -- | -- |
 | order_no | string | 唯一订单号 |
+| state | int | 0失败，1成功 |
 | out_bank_name | string | 固定传值：vodafone |
-| out_account_name | string | 出款账户名 |
-| out_account_no | string | 出款账户手机号 |
+| out_account_name | string | 出款账户名，失败时为空字符串 |
+| out_account_no | string | 出款账户手机号，失败时为空字符串 |
 | remarks | string | 空字符串 |
 
-
-
-## 5. 付单-设备处理状态-失败
-
-**状态参数列表**
-
-
-| 参数名 | 参数类型 | 说明 |
-| -- | -- | -- |
-| order_no | string | 唯一订单号 |
-| remarks | string | 错误提示，仅供参考，非对账依据 |
 
