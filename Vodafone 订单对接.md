@@ -51,6 +51,15 @@
 | amount | string | 付款金额，金额单位元，精确到两位小数 |
 | notify_url | string | 成功/失败通知地址，带 http://  |
 
+**返回参数列表**
+
+```javascript
+{
+  "code": 0,  // 0成功，其他都为失败，并会有 message 提示
+  "message": "错误提示",
+  "data": []
+}
+```
 
 ## 4. 付单-设备处理状态
 
@@ -71,4 +80,13 @@
 | out_account_no | string | 出款账户手机号，失败时为空字符串 |
 | remarks | string | 空字符串 |
 
+**返回参数列表**
+
+```javascript
+{
+  "code": 0,  // 0成功，其他都为失败，并会有 message 提示
+  "message": "错误提示",
+  "data": []
+}
+```
 
