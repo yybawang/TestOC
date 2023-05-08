@@ -39,13 +39,13 @@
 
 | 参数名 | 参数类型 | 说明 |
 | -- | -- | -- |
-| card_id | int | 设备ID，出款设备，0则不指定使用自动有余额的设备出款 |
-| order_no | string | 唯一订单号 |
-| bank_name | string | 固定传值：vodafone |
-| account_name | string | 付款给谁的账户名，有则传，否则固定传值：vodafone |
+| card_id | int | 设备ID，出款设备，传0则不指定使用自动有余额的设备出款 |
+| order_no | string | 上游商户唯一订单号 |
+| bank_name | string | 固定传值：paymentVodafone |
+| account_name | string | 付款给谁的账户名，有则传，否则空字符串 |
 | account_no | string | 付款给谁的手机号 |
 | amount | string | 付款金额，金额单位元，精确到两位小数 |
-| notify_url | string | 成功/失败通知地址 |
+| notify_url | string | 成功/失败通知地址，带 http://  |
 
 
 ## 4. 付单-设备处理状态
@@ -55,9 +55,10 @@
 
 | 参数名 | 参数类型 | 说明 |
 | -- | -- | -- |
-| order_no | string | 唯一订单号 |
+| order_id | string | 脚本唯一订单ID |
+| order_no | string | 上游商户唯一订单号 |
 | state | int | 0失败，1成功 |
-| out_bank_name | string | 固定传值：vodafone |
+| out_bank_name | string | 固定传值：paymentVodafone |
 | out_account_name | string | 出款账户名，失败时为空字符串 |
 | out_account_no | string | 出款账户手机号，失败时为空字符串 |
 | remarks | string | 空字符串 |
